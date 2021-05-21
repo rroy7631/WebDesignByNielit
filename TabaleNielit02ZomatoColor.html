@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 50%;
+            margin: auto;
+            text-align: left;
+        }
+        th{
+            background-color: #5e97aa;
+            color: white;
+        }
+        td{
+            background-color: white;
+        }
+        table,th, td {
+                 border: 1px solid black;
+                 border-collapse: collapse;
+                 padding: 10px 10px;
+                 }
+
+       
+    </style>
+</head>
+<body bgcolor="#B80C09" id="bdy">
+
+    <table  >
+        <tr>
+            <th colspan="3" > Zomato Invoice #987321 </th>
+            <th colspan="2"> 20-May-2021 </th>
+        </tr>
+
+        <tr> 
+            <td colspan="2"> 
+                 <span> <b>Zomato Delhi</b> </span> <br>
+                        v3s Mall <br>
+                        Lx Nagar, Del - 110032
+            </td>
+            <td colspan="2">
+                 <span> <b> Customer: </b>  </span> <br>
+                        Ravinder <br>
+                        East Delhi, Del - 110032
+            </td>
+        </tr>
+        <tr>
+            <th> Name/ Description</th>
+            <th> Qty. </th>
+            <th> MRP </th>
+            <th> Amount </th>
+        </tr>
+        <tr>
+            <td>Pizza</td>
+            <td>2</td>
+            <td>450</td>
+            <td>900</td>
+        </tr>
+        <tr>
+            <td>Burger</td>
+            <td>5</td>
+            <td>70</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>Mingles Bucket Meal</td>
+            <td>1</td>
+            <td>450</td>
+            <td>450</td>
+        </tr>
+
+        <tr>
+            <th colspan="2"> Tax </th>
+            <td bgcolor="#EDFBC1"> 10% </td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <th colspan="3">Total Amount</th>
+            <td> 1870</td>
+
+        </tr>
+    </table>
+         
+
+   
+    <script>
+        setInterval(function(){
+            var a = document.getElementById("bdy").style;
+                a.backgroundColor = "#FF9933";
+
+
+        },1000);
+         
+
+        setInterval(function(){
+            var  b = document.getElementById("bdy").style;
+                 b.backgroundColor = "#FFFFFF";
+
+
+        },2000);
+
+
+        setInterval(function(){
+            var c = document.getElementById("bdy").style;
+                c.backgroundColor = "#138808";
+
+
+        },3000);
+
+
+
+        
+
+
+        // setInterval(function(){
+        //     var c = document.getElementById("ig").src
+        //         c.backgroundColor = "#138808";
+
+
+        // },3000);
+    </script>
+</body>
+</html>
