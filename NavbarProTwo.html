@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavinderNavBar/NavBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            /* background-color: rgb(124, 166, 221); */
+            background-image: linear-gradient(to right, rgb(255, 123, 0), rgb(255, 255, 255), green);
+        }
+
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: teal;
+        }
+
+        .logo {
+            padding: 8px 20px;
+            font-size: 28px;
+            line-height: 50px;
+            color: white;
+            font-weight: bolder;
+        }
+
+
+
+        .menu ul {
+            float: right;
+            margin-right: 40px;
+            position: relative;
+        }
+
+
+        .menu li {
+            display: inline-block;
+            line-height: 50px;
+
+        }
+
+        .menu li a {
+            padding: 6px 30px;
+            border: 1px solid black;
+            margin: 5px;
+            text-transform: uppercase;
+            color: white;
+            transition: all .5s ease-in-out;
+        }
+
+        .menu li a:hover {
+            background-color: rgb(183, 0, 255);
+            border-radius: 10px;
+            /* box-shadow: 2px 2px 15px rgb(174, 0, 255); */
+            box-shadow: 2px 2px 25px rgb(0, 247, 255);
+            border: 1px solid teal;
+        }
+
+        .menu ul ul,
+        .menu ul ul ul li {
+            display: none;
+        }
+
+
+        .menu ul :hover ul {
+            display: block;
+            width: 300px;
+            position: absolute;
+            top: 50px;
+
+
+        }
+
+        .menu ul ul a,
+        .menu ul ul ul a {
+            color: black;
+            background-color: rgb(136, 136, 136);
+        }
+
+        .menu ul ul a:hover,
+        .menu ul ul ul a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        
+
+        .menu ul ul li:hover li {
+            display: block;
+            
+        }
+
+
+
+        .menu ul ul ul {
+            position: absolute;
+            left: 215px;
+            width: 100px;
+
+
+        }
+
+        p {
+            margin: 20px;
+
+        }
+
+        .img-text {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: 50px;
+
+        }
+
+        .text {
+            padding: 30px;
+            text-align: justify;
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+
+
+        .img-gall {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+        }
+
+
+        .imgg {
+
+            opacity: .2;
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+
+        }
+
+        .imgg:hover {
+            opacity: 1;
+            border-radius: 10%;
+
+        }
+
+
+
+
+
+        @keyframes tx {
+            0% {
+                color: rgb(3, 205, 255);
+
+            }
+
+            25% {
+                color: red;
+            }
+
+            50% {
+                color: rgb(0, 255, 213);
+            }
+
+            75% {
+                color: rgb(255, 0, 221);
+            }
+
+            100% {
+                color: rgb(255, 255, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <label for="" class="logo"
+            style="padding: 0 70px; text-shadow: 0 0 20px rgb(3, 205, 255); animation: tx 1s infinite ease-in-out;">
+            Ravinder</label>
+        <ul>
+            <li>
+                <a href=" #">home </i></a>
+            </li>
+            <li>
+                <a href="#blog">blog</a>
+            </li>
+            <li>
+                <a href="#">service <i class="fa fa-cog fa-spin"></i> </a>
+                <ul>
+                    <li> <a href="#">web design</a></li>
+                    <li> <a href="#">graphic design <i class="fa fa-cog fa-spin"></i></a>
+                        <ul style="width: 120px; margin-left: 1px;">
+                            <li><a href="#">ai</a></li>
+                            <li><a href="#">ps</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#">canvas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#gly"> Gallery</a>
+            </li>
+            <li>
+                <a href="#foot">about</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        style="width: 100%;background-size: cover; background-attachment: fixed;" alt="">
+
+
+    <p id="para" style=" position: absolute; top: 60%; left: 5%;  font-size: 22px;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, <br> voluptatum sint. Excepturi ut placeat
+        nobis
+        magnam. <br> Molestiae ducimus id iste at et, consequatur <br> enim impedit ad itaque tenetur, <br>
+        doloremque maxime.
+    </p>
+    <div class="img-text" style="width: 100%; height: 500px;">
+        <div class="text" id="blog">
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                alt="">
+        </div>
+
+
+
+
+        <div class="text">
+            <h1 style="text-align: center; color:rgb(65, 65, 65)">BLOG</h1>
+            <section style="padding: 50px;">
+
+                <b> LOREM IPSUM ,</b>
+                dolor sit amet consectetur adipisicing elit. Suscipit quod sapiente nisi tempora quaerat
+                recusandae adipisci blanditiis maiores reiciendis magni. Exercitationem, perferendis vel minus illum
+                molestias aperiam in iusto accusamus dolorem quidem tempora, possimus eos neque? Maiores aliquam
+                distinctio inventore officiis, cupiditate hic, odio perspiciatis fugiat amet dolorum deleniti laudantium
+                magni voluptatibus quisquam. Iure commodi reiciendis rerum itaque voluptatibus tempora laborum, quaerat
+                ut corrupti autem facilis, animi voluptate? Vel nesciunt ratione quisquam labore molestias possimus aut
+                accusamus modi illo, adipisci quo vitae ad tenetur
+                praesentium ipsam repellendus atque nisi! Nobis illum rerum beatae assumenda, error numquam quaerat
+                voluptate maiores, voluptas exercitationem accusantium ad sequi dolore, aliquid earum hic fugiat. Non,
+                dolore. Officia ipsa mollitia ratione hic? Id recusandae ipsum quas itaque exercitationem minima porro
+                beatae, error ut, aut tempore temporibus expedita cupiditate quae ab dolorum ullam perferendis! Ex
+                eos nostrum molestiae nulla odio voluptatem? Hic nulla facilis
+                libero laborum sapiente.
+            </section>
+        </div>
+    </div>
+
+
+
+    <h1 id="gly" style="text-align: center; font-size: 28px; color: rgb(49, 49, 49); margin: 30px 0px;">Image Gallery
+    </h1>
+    <div class="img-gall">
+
+        <div class="imgg">
+
+            <img src="https://images.unsplash.com/photo-1498192467103-290f567eb3a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                alt="">
+        </div>
+        <div class="imgg">
+
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                alt="">
+        </div>
+        <div class="imgg">
+            <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                alt="">
+
+        </div>
+        <div class="imgg">
+
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                alt="">
+        </div>
+        <div class="imgg">
+
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                alt="">
+        </div>
+        <div class="imgg">
+
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
+                alt="">
+        </div>
+        <div class="imgg">
+
+            <img src="https://images.unsplash.com/photo-1581521778197-f813ac8c16f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
+        </div>
+        <div
+            class="imgg">
+
+            <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt="">
+        </div>
+    </div>
+    <div id="foot" class="footer" style="width: 100%; background-color: black; height: 50px; margin-top: 50px;">
+        <p style="color: white; line-height: 50px; text-align: center; font-size: 20px;">
+            Copy Right @2021 Ravinder
+        </p>
+    </div>
+</body>
+
+</html>
